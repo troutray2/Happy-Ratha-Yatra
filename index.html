@@ -301,7 +301,6 @@
     <!-- Main Page Content Area -->
     <div class="page-content-wrapper">
         <div class="container">
-            <!-- *** THIS LINE IS RECTIFIED *** -->
             <img id="rathaYatraGif" src="RAJA1.gif" alt="Ratha Yatra Festival Animation">
 
             <h1 class="festive-greeting">
@@ -343,7 +342,8 @@
         <p>Tap to start the music & celebration!</p>
     </div>
 
-    <audio id="backgroundMusic" src="RATHAYATRA.mp3" loop></audio>
+    <!-- *** THIS LINE IS RECTIFIED *** -->
+    <audio id="backgroundMusic" src="RAJA.mp3" loop></audio>
 
     <!-- Bottom Ad Container -->
     <div id="ad-container-bottom" class="ad-container">
@@ -387,7 +387,7 @@
 
                 // Now, attempt to play the audio.
                 backgroundMusic.play().catch(e => {
-                    console.error("Audio play failed after interaction. The file 'RATHAYATRA.mp3' might be missing.", e);
+                    console.error("Audio play failed after interaction. The file 'RAJA.mp3' might be missing or failed to load.", e);
                 });
             }
 
